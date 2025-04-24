@@ -92,14 +92,38 @@ h2 {
       document.getElementById(lang).classList.add('active');
     }
     window.onload = () => showLanguage('fr');
-  </script>
+  
+const menus = {
+  fr: ["Accueil", "À propos", "Consultations", "Pour qui ? Pour quoi ?", "Prendre RDV"],
+  en: ["Home", "About", "Consultations", "Who is it for? What for?", "Book"],
+  es: ["Inicio", "Sobre mí", "Consultas", "¿Para quién? ¿Para qué?", "Cita previa"],
+  ar: ["الرئيسية", "من أنا", "الاستشارات", "لمن؟ ولماذا؟", "الحجز"],
+  ru: ["Главная", "Обо мне", "Консультации", "Кому и зачем?", "Запись"],
+  it: ["Home", "Chi sono", "Consultazioni", "Per chi? Per cosa?", "Prenota"]
+};
+
+function updateMenu(lang) {
+  const labels = menus[lang];
+  const navLinks = document.querySelectorAll('.top-nav ul li a');
+  for (let i = 0; i < labels.length; i++) {
+    navLinks[i].innerText = labels[i];
+  }
+}
+window.updateMenu = updateMenu;
+
+const originalShowLanguage = showLanguage;
+showLanguage = function(lang) {
+  originalShowLanguage(lang);
+  updateMenu(lang);
+};
+</script>
 </head>
 <body><div class="banner"></div>
-<nav class="top-nav">
+<nav class="top-nav" id="main-nav">
 <ul>
 <li><a href="#accueil">Accueil</a></li>
 <li><a href="#apropos">À propos</a></li>
-<li><a href="#consultations">Consultations</a></li><li><a href="#pourqui">Pour qui ? Pour quoi</a></li>
+<li><a href="#consultations">Consultations</a></li><li><a href="#pourqui">Pour qui ? Pour quoi ?</a></li>
 <li><a href="#rdv">Prendre RDV</a></li>
 </ul>
 </nav>
@@ -117,7 +141,7 @@ h2 {
 <a href="#accueil">Accueil</a>
 <a href="#apropos">À propos</a>
 <a href="#consultations">Consultations</a>
-<a href="#rdv">Prendre RDV</a>
+<a href="#rdv">Pour qui ? Pour quoi ?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>À propos de mon approche</h2>
@@ -181,34 +205,23 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">Home</a>
 <a href="#apropos">About</a>
 <a href="#consultations">Consultations</a>
-<a href="#rdv">Book</a>
+<a href="#rdv">Who is it for? What for?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>About my approach</h2>
-
-
-
 <p>Graduated from the Atman School of Osteopathy in 2015, I practice a holistic osteopathy centered on listening to the body, respecting its rhythm, and understanding each patient’s unique story.</p><p>My approach is based on a global vision of health: every symptom is a reflection of a balance to be readjusted. In each consultation, I take the time to listen, manually assess areas of tension, and adapt my gestures to your specific needs. The goal is to gently and deeply guide the body toward lasting well-being.</p><p>“The body speaks… You just have to know how to listen.”</p></section>
 <section class="main-section" id="consultations">
 <h2>Consultations</h2>
 <h3>A respectful and personalized practice</h3>
-
 <h3>Prices</h3>
 <ul>
 <li>Adults: €70</li>
 <li>Infants and children: €40</li>
 </ul>
 <h3>Conditions treated</h3>
-
 <p>Each session includes:</p><p>• Complete case history</p><p>• Manual osteopathic testing</p><p>• Personalized treatment (structural, visceral, cranial, functional, fascial…)</p><p>I ensure medical contraindications are respected and refer my patients to a doctor in case of diagnostic doubt.</p></section>
 <section class="main-section" id="pourqui">
 <h2>Who is it for? What for?</h2>
-
-
-
-
-
-
 <p>I support newborns from their very first days of life.</p><p>Common reasons for consultation in infants:</p><p>INFANTS: Plagiocephaly | Gastroesophageal reflux | Colic | Torticollis | Sucking or sleep disorders</p><p>I also support children, adults, pregnant women, athletes and seniors for a variety of concerns:</p><p>CHILDREN &amp; ADULTS: Joint and muscle pain | Back pain | Migraines | Headaches | Vertigo | Digestive issues | Stress | Fatigue | Sleep disorders | Post-traumatic chronic pain | Frozen shoulder | Tendinitis</p><p>PREGNANT &amp; POSTPARTUM WOMEN: Birth preparation | Ligament pain | Postpartum follow-up</p><p>SENIORS &amp; ATHLETES: Mobility | Fall prevention | Recovery | Chronic or traumatic pain</p></section>
 <section class="main-section" id="rdv">
 <h2>Book an appointment</h2>
@@ -229,34 +242,23 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">Inicio</a>
 <a href="#apropos">Sobre mí</a>
 <a href="#consultations">Consultas</a>
-<a href="#rdv">Cita</a>
+<a href="#rdv">¿Para quién? ¿Para qué?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>Sobre mi enfoque</h2>
-
-
-
 <p>Graduada en la escuela de osteopatía Atman en 2015, practico una osteopatía holística centrada en la escucha del cuerpo, el respeto a su ritmo y la comprensión de la historia única de cada paciente.</p><p>Mi enfoque se basa en una visión global de la salud: cada síntoma es el reflejo de un equilibrio a reajustar. En cada consulta, me tomo el tiempo para escucharte, evaluar manualmente las zonas de tensión y adaptar mis gestos a tus necesidades específicas. El objetivo es acompañar al cuerpo hacia un bienestar duradero, con suavidad y profundidad.</p><p>“El cuerpo habla… solo hay que saber escucharlo.”</p></section>
 <section class="main-section" id="consultations">
 <h2>Consultas</h2>
 <h3>Una práctica respetuosa y adaptada</h3>
-
 <h3>Tarifas</h3>
 <ul>
 <li>Adultos: 70€</li>
 <li>Bebés y niños: 40€</li>
 </ul>
 <h3>Patologías tratadas</h3>
-
 <p>Cada sesión incluye:</p><p>• Anamnesis completa</p><p>• Pruebas osteopáticas manuales</p><p>• Tratamiento personalizado (estructural, visceral, craneal, funcional, fascial…)</p><p>Me aseguro de respetar las contraindicaciones médicas y derivo a mis pacientes a un médico en caso de duda diagnóstica.</p></section>
 <section class="main-section" id="pourqui">
 <h2>¿Para quién? ¿Para qué?</h2>
-
-
-
-
-
-
 <p>Acompaño a los más pequeños desde sus primeros días de vida.</p><p>Motivos frecuentes de consulta en bebés:</p><p>BEBÉS: Plagiocefalia | Reflujo gastroesofágico | Cólicos | Tortícolis | Problemas de succión o sueño</p><p>También acompaño a niños, adultos, mujeres embarazadas, deportistas y personas mayores con diversos trastornos:</p><p>NIÑOS Y ADULTOS: Dolores articulares y musculares | Dolores de espalda | Migrañas | Cefaleas | Vértigo | Trastornos digestivos | Estrés | Fatiga | Trastornos del sueño | Dolores crónicos postraumáticos | Hombro congelado | Tendinitis</p><p>MUJERES EMBARAZADAS Y POSTPARTO: Preparación para el parto | Dolores ligamentarios | Seguimiento tras el nacimiento</p><p>MAYORES Y DEPORTISTAS: Movilidad | Prevención de caídas | Recuperación | Dolores crónicos o traumáticos</p></section>
 <section class="main-section" id="rdv">
 <h2>Pedir cita</h2>
@@ -278,34 +280,23 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">الرئيسية</a>
 <a href="#apropos">من أنا</a>
 <a href="#consultations">الاستشارات</a>
-<a href="#rdv">حجز</a>
+<a href="#rdv">لمن؟ ولماذا؟</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>عن منهجي</h2>
-
-
-
 <p>تخرجت من مدرسة أتمان لتقويم العظام عام 2015، وأمارس تقويم العظام الشمولي الذي يركز على الاستماع للجسم، واحترام إيقاعه، وفهم القصة الفريدة لكل مريض.</p><p>منهجي يستند إلى رؤية شاملة للصحة: كل عرض هو انعكاس لاختلال في التوازن يجب تصحيحه. في كل جلسة، أخصص وقتًا للاستماع إليك، تقييم المناطق المتوترة يدويًا، وتكييف تقنياتي وفقًا لاحتياجاتك. الهدف هو مرافقة الجسم نحو الراحة المستدامة بلطف وعمق.</p><p>“الجسم يتحدث... فقط علينا أن نستمع.”</p></section>
 <section class="main-section" id="consultations">
 <h2>الاستشارات</h2>
 <h3>ممارسة محترمة ومخصصة</h3>
-
 <h3>الأسعار</h3>
 <ul>
 <li>البالغين: 70€</li>
 <li>الرضع والأطفال: 40€</li>
 </ul>
 <h3>الحالات المعالجة</h3>
-
 <p>تتضمن كل جلسة:</p><p>• anamnesis كاملة</p><p>• اختبارات يدوية لتقويم العظام</p><p>• علاج مخصص (هيكلي، حشوي، جمجمى، وظيفي، لفافي…)</p><p>أحرص على احترام موانع الاستخدام الطبية وأوجه المرضى إلى الطبيب في حال وجود شك في التشخيص.</p></section>
 <section class="main-section" id="pourqui">
 <h2>لمن؟ ولماذا؟</h2>
-
-
-
-
-
-
 <p>أرافق الأطفال الرضع منذ أيامهم الأولى.</p><p>أسباب شائعة للاستشارة عند الرضع:</p><p>الرضع: تسطح الرأس | ارتجاع معدي مريئي | مغص | التواء الرقبة | صعوبات في المص أو النوم</p><p>كما أرافق الأطفال، البالغين، الحوامل، الرياضيين وكبار السن لمجموعة من الاضطرابات:</p><p>الأطفال والبالغون: آلام المفاصل والعضلات | آلام الظهر | الصداع النصفي | الدوخة | مشاكل الهضم | التوتر | الإرهاق | مشاكل النوم | الآلام المزمنة بعد الصدمات | الكتف المتجمد | التهاب الأوتار</p><p>النساء الحوامل وما بعد الولادة: التحضير للولادة | آلام الأربطة | المتابعة بعد الولادة</p><p>كبار السن والرياضيون: الحركة | الوقاية من السقوط | التعافي | الآلام المزمنة أو الناتجة عن إصابات</p></section>
 <section class="main-section" id="rdv">
 <h2>احجز موعدًا</h2>
@@ -327,34 +318,23 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">Главная</a>
 <a href="#apropos">Обо мне</a>
 <a href="#consultations">Консультации</a>
-<a href="#rdv">Запись</a>
+<a href="#rdv">Кому и зачем?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>О моем подходе</h2>
-
-
-
 <p>Я окончила школу остеопатии Atman в 2015 году и практикую холистическую остеопатию, основанную на внимательном отношении к телу, уважении его ритма и понимании уникальной истории каждого пациента.</p><p>Мой подход основывается на целостном восприятии здоровья: каждый симптом — это отражение дисбаланса, который нужно скорректировать. На каждой консультации я уделяю время, чтобы выслушать вас, вручную оценить напряжения и адаптировать свои методы к вашим потребностям. Цель — мягко и глубоко помочь телу достичь устойчивого благополучия.</p><p>“Тело говорит... нужно лишь уметь слушать.”</p></section>
 <section class="main-section" id="consultations">
 <h2>Консультации</h2>
 <h3>Уважительная и персонализированная практика</h3>
-
 <h3>Цены</h3>
 <ul>
 <li>Взрослые: 70€</li>
 <li>Дети и младенцы: 40€</li>
 </ul>
 <h3>Что лечим</h3>
-
 <p>Каждая сессия включает:</p><p>• Полный сбор анамнеза</p><p>• Ручные остеопатические тесты</p><p>• Индивидуальное лечение (структурное, висцеральное, краниальное, функциональное, фасциальное…)</p><p>Я соблюдаю медицинские противопоказания и направляю пациентов к врачу при наличии диагностических сомнений.</p></section>
 <section class="main-section" id="pourqui">
 <h2>Кому и зачем</h2>
-
-
-
-
-
-
 <p>Я сопровождаю малышей с первых дней жизни.</p><p>Распространенные причины консультаций у младенцев:</p><p>МЛАДЕНЦЫ: Плагиоцефалия | Гастроэзофагеальный рефлюкс | Колики | Кривошея | Нарушения сосания или сна</p><p>Также я работаю с детьми, взрослыми, беременными женщинами, спортсменами и пожилыми людьми при различных проблемах:</p><p>ДЕТИ И ВЗРОСЛЫЕ: Боли в суставах и мышцах | Боли в спине | Мигрени | Головные боли | Головокружения | Нарушения пищеварения | Стресс | Усталость | Нарушения сна | Хроническая боль после травм | Замороженное плечо | Тендинит</p><p>БЕРЕМЕННЫЕ И ПОСЛЕРОДОВЫЕ: Подготовка к родам | Боли в связках | Послеродовое сопровождение</p><p>ПОЖИЛЫЕ И СПОРТСМЕНЫ: Подвижность | Профилактика падений | Восстановление | Хроническая или травматическая боль</p></section>
 <section class="main-section" id="rdv">
 <h2>Запись</h2>
@@ -375,34 +355,23 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">Home</a>
 <a href="#apropos">Chi sono</a>
 <a href="#consultations">Consultazioni</a>
-<a href="#rdv">Prenota</a>
+<a href="#rdv">Per chi? Per cosa?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>Il mio approccio</h2>
-
-
-
 <p>Diplomata alla scuola di osteopatia Atman nel 2015, pratico un’osteopatia olistica basata sull’ascolto del corpo, il rispetto dei suoi ritmi e la comprensione della storia unica di ogni paziente.</p><p>Il mio approccio si fonda su una visione globale della salute: ogni sintomo riflette un equilibrio da ristabilire. Durante ogni seduta, mi prendo il tempo di ascoltarti, valutare manualmente le tensioni e adattare le tecniche alle tue esigenze specifiche. L’obiettivo è accompagnare il corpo verso un benessere duraturo, con dolcezza e profondità.</p><p>“Il corpo parla… basta saperlo ascoltare.”</p></section>
 <section class="main-section" id="consultations">
 <h2>Consultazioni</h2>
 <h3>Una pratica rispettosa e personalizzata</h3>
-
 <h3>Tariffe</h3>
 <ul>
 <li>Adulti: 70€</li>
 <li>Neonati e bambini: 40€</li>
 </ul>
 <h3>Patologie trattate</h3>
-
 <p>Ogni seduta include:</p><p>• Anamnesi completa</p><p>• Test osteopatici manuali</p><p>• Trattamento personalizzato (strutturale, viscerale, craniale, funzionale, fasciale…)</p><p>Mi assicuro di rispettare le controindicazioni mediche e indirizzo i pazienti al medico in caso di dubbio diagnostico.</p></section>
 <section class="main-section" id="pourqui">
 <h2>Per chi? Per cosa?</h2>
-
-
-
-
-
-
 <p>Accompagno i neonati fin dai loro primi giorni di vita.</p><p>Motivi frequenti di consultazione nei neonati:</p><p>NEONATI: Plagiocefalia | Reflusso gastroesofageo | Coliche | Torcicollo | Disturbi della suzione o del sonno</p><p>Seguo anche bambini, adulti, donne incinte, sportivi e anziani con vari disturbi:</p><p>BAMBINI &amp; ADULTI: Dolori articolari e muscolari | Mal di schiena | Emicranie | Cefalee | Vertigini | Disturbi digestivi | Stress | Affaticamento | Insonnia | Dolori cronici post-traumatici | Spalla congelata | Tendiniti</p><p>DONNE IN GRAVIDANZA E POST-PARTO: Preparazione al parto | Dolori legamentosi | Controllo dopo la nascita</p><p>ANZIANI &amp; SPORTIVI: Mobilità | Prevenzione delle cadute | Recupero | Dolori cronici o traumatici</p></section>
 <section class="main-section" id="rdv">
 <h2>Prenota un appuntamento</h2>
@@ -423,7 +392,7 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">Home</a>
 <a href="#apropos">About</a>
 <a href="#consultations">Consultations</a>
-<a href="#rdv">Who is it for?</a>
+<a href="#rdv">Pour qui ? Pour quoi ?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>À propos de mon approche</h2>
@@ -487,7 +456,7 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">Inicio</a>
 <a href="#apropos">Sobre mí</a>
 <a href="#consultations">Consultas</a>
-<a href="#rdv">¿Para quién?</a>
+<a href="#rdv">Pour qui ? Pour quoi ?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>À propos de mon approche</h2>
@@ -615,7 +584,7 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">Главная</a>
 <a href="#apropos">Обо мне</a>
 <a href="#consultations">Консультации</a>
-<a href="#rdv">Кому и зачем</a>
+<a href="#rdv">Pour qui ? Pour quoi ?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>À propos de mon approche</h2>
@@ -679,7 +648,7 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <a href="#accueil">Home</a>
 <a href="#apropos">Chi sono</a>
 <a href="#consultations">Consultazioni</a>
-<a href="#rdv">Per chi? Per cosa?</a>
+<a href="#rdv">Pour qui ? Pour quoi ?</a>
 </nav>
 <section class="main-section" id="apropos">
 <h2>À propos de mon approche</h2>
