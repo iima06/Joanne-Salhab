@@ -1,8 +1,4 @@
-
-<!DOCTYPE html>
-
-<html lang="fr">
-<head>
+<html><head>
 <meta charset="utf-8"/>
 <title>Diagn’osteo – Multilingual</title>
 <style>body { font-family: 'Quicksand', sans-serif; }
@@ -134,32 +130,40 @@ showLanguage = function(lang) {
   updateMenu(lang);
 };
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&amp;display=swap" rel="stylesheet"/></head>
-<body><div class="banner"></div>
-<nav class="top-nav" id="main-nav">
-<ul>
-<li><a href="#accueil">Accueil</a></li>
-<li><a href="#apropos">À propos</a></li>
-<li><a href="#consultations">Consultations</a></li><li><a href="#pourqui">Pour qui ? Pour quoi ?</a></li>
-<li><a href="#rdv">Prendre RDV</a></li>
-<li><a href="#faq">FAQ</a></li></ul>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&amp;display=swap" rel="stylesheet"/></head><body>
+<nav class="language-switcher">
+<a href="/index.html">🇫🇷 Français</a> |
+  <a href="/en/index.html">🇬🇧 English</a> |
+  <a href="/es/index.html">🇪🇸 Español</a> |
+  <a href="/ar/index.html">🇸🇦 العربية</a> |
+  <a href="/ru/index.html">🇷🇺 Русский</a> |
+  <a href="/it/index.html">🇮🇹 Italiano</a>
 </nav>
-<main><div class="lang-switcher">
-<img alt="Français" onclick="showLanguage('fr')" src="https://flagcdn.com/w80/fr.png"/>
-<img alt="English" onclick="showLanguage('en')" src="https://flagcdn.com/w80/gb.png"/>
-<img alt="Español" onclick="showLanguage('es')" src="https://flagcdn.com/w80/es.png"/><img alt="العربية" onclick="showLanguage('ar')" src="https://flagcdn.com/w80/sa.png"/><img alt="Русский" onclick="showLanguage('ru')" src="https://flagcdn.com/w80/ru.png"/><img alt="Italiano" onclick="showLanguage('it')" src="https://flagcdn.com/w80/it.png"/></div><div class="lang-section active" id="fr"><body>
+<style>
+.language-switcher {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.language-switcher a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+</style>
+<div class="lang-section active" id="fr"><body>
 <header>
 <img alt="Logo Diagn'osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
 <h1>Joanne Salhab - Ostéopathe D.O.</h1>
 <p class="slogan">"Écouter le patient, regarder-le, il vous donne le diagnostic."</p>
 </header>
-<section class="main-section" id="apropos">
+<section class="main-section" id="accueil-fr">
 <h2>À propos de mon approche</h2>
 <p>Diplômée de l’école d’ostéopathie Atman en 2015, je pratique une ostéopathie holistique centrée sur l’écoute, le respect du corps et la globalité de chaque patient. Chaque consultation commence par une véritable rencontre : comprendre votre histoire, votre parcours médical, vos ressentis.</p>
 <p>Spécialisée en périnatalité, j’accompagne les nourrissons pour des troubles tels que plagiocéphalie, reflux, coliques, torticolis, troubles de la succion ou du sommeil. J’interviens aussi auprès des adultes et seniors pour les douleurs articulaires, migraines, vertiges, troubles digestifs fonctionnels, douleurs chroniques, et plus encore.</p>
 <p>Je respecte scrupuleusement les signaux d’alerte médicaux (red flags) et oriente mes patients vers un médecin si une pathologie nécessitant un diagnostic médical est suspectée.</p>
 </section>
-<section class="main-section" id="consultations">
+<section class="main-section" id="apropos-fr">
 <h2>Consultations</h2>
 <h3>Déroulement d'une séance</h3>
 <p>Une pratique respectueuse et adaptée
@@ -180,7 +184,7 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <h3>Pathologies prises en charge</h3>
 <p>Douleurs musculo-squelettiques, migraines, vertiges, troubles digestifs fonctionnels, troubles posturaux, douleurs tendineuses, troubles liés à la naissance chez les bébés…</p>
 </section>
-<section class="main-section" id="pourqui">
+<section class="main-section" id="consultations-fr">
 <h2>Pour qui ? Pour quoi</h2>
 <p>J’accompagne les tout-petits dès leurs premiers jours de vie.<br/><strong>Motifs fréquents de consultation :</strong></p>
 <p><strong>👶 NOURRISSONS</strong></p>
@@ -193,353 +197,15 @@ L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complè
 <p><strong><p>🏃 SENIORS &amp; SPORTIFS</p></strong></p>
 <p> Mobilité | Prévention des chutes | Récupération | Douleurs chroniques ou traumatiques</p>
 </section>
-<section class="main-section" id="rdv">
+<section class="main-section" id="pourqui-fr">
 <h2>Prendre rendez-vous</h2>
 <p>Téléphone : <strong>06 31 85 46 09</strong></p>
 <p>Email : <strong>joanne.salhab@gmail.com</strong></p>
 <p><a class="cta-button" href="https://www.doctolib.fr/osteopathe/cannes/joanne-salhab" target="_blank">Prendre rendez-vous via Doctolib</a></p>
 <p>Adresse du cabinet : <em>14 Boulevard d'oxford 06400 Cannes</em></p>
 <p>Carte Google Maps ici</p>
-</section><section id="faq"><h2>FAQ – Questions fréquentes</h2><h3>Combien de temps dure une séance ?</h3><p>Une consultation dure environ 45 minutes à 1 heure, en fonction de votre motif de consultation et de vos besoins.</p><h3>Combien de séances sont nécessaires ?</h3><p>Le nombre de séances dépend de votre motif de consultation, de votre âge, et de l'évolution de vos symptômes. Parfois une seule séance suffit, parfois plusieurs séances espacées sont nécessaires pour obtenir un résultat durable. Nous évaluons cela ensemble à chaque étape.</p><h3>Mon bébé peut-il bénéficier d’une séance ?</h3><p>Oui, j’accueille les nourrissons dès leurs premiers jours de vie, en douceur, avec des gestes adaptés. Exemples : plagiocéphalie, reflux, coliques, troubles de succion ou du sommeil…</p><h3>Est-ce que l’ostéopathie fait mal ?</h3><p>Non. L’ostéopathie que je pratique est douce et respectueuse du corps. Si un geste peut provoquer une gêne, je vous en informe toujours à l’avance.</p><h3>Faut-il une ordonnance pour consulter ?</h3><p>Non, l’ostéopathie est une discipline en accès direct : vous pouvez consulter librement, sans prescription médicale.</p><h3>Est-ce que l’ostéopathie est remboursée ?</h3><p>Elle n’est pas remboursée par la Sécurité Sociale, mais la plupart des mutuelles prennent en charge tout ou partie des séances. Je vous délivre une facture en fin de séance.</p><h3>Quelle est la différence entre un ostéopathe et un kinésithérapeute ?</h3><p>L’ostéopathe travaille en consultation libre, sans ordonnance, avec une vision globale du corps. Il utilise des techniques manuelles douces pour rétablir l’équilibre et soulager les tensions. Le kinésithérapeute intervient souvent sur prescription médicale, après une blessure ou une opération, avec un suivi plus long et des exercices de rééducation ciblés. Les deux approches sont complémentaires et peuvent tout à fait se combiner.</p></section>
+</section><section id="rdv-fr"><h2>FAQ – Questions fréquentes</h2><h3>Combien de temps dure une séance ?</h3><p>Une consultation dure environ 45 minutes à 1 heure, en fonction de votre motif de consultation et de vos besoins.</p><h3>Combien de séances sont nécessaires ?</h3><p>Le nombre de séances dépend de votre motif de consultation, de votre âge, et de l'évolution de vos symptômes. Parfois une seule séance suffit, parfois plusieurs séances espacées sont nécessaires pour obtenir un résultat durable. Nous évaluons cela ensemble à chaque étape.</p><h3>Mon bébé peut-il bénéficier d’une séance ?</h3><p>Oui, j’accueille les nourrissons dès leurs premiers jours de vie, en douceur, avec des gestes adaptés. Exemples : plagiocéphalie, reflux, coliques, troubles de succion ou du sommeil…</p><h3>Est-ce que l’ostéopathie fait mal ?</h3><p>Non. L’ostéopathie que je pratique est douce et respectueuse du corps. Si un geste peut provoquer une gêne, je vous en informe toujours à l’avance.</p><h3>Faut-il une ordonnance pour consulter ?</h3><p>Non, l’ostéopathie est une discipline en accès direct : vous pouvez consulter librement, sans prescription médicale.</p><h3>Est-ce que l’ostéopathie est remboursée ?</h3><p>Elle n’est pas remboursée par la Sécurité Sociale, mais la plupart des mutuelles prennent en charge tout ou partie des séances. Je vous délivre une facture en fin de séance.</p><h3>Quelle est la différence entre un ostéopathe et un kinésithérapeute ?</h3><p>L’ostéopathe travaille en consultation libre, sans ordonnance, avec une vision globale du corps. Il utilise des techniques manuelles douces pour rétablir l’équilibre et soulager les tensions. Le kinésithérapeute intervient souvent sur prescription médicale, après une blessure ou une opération, avec un suivi plus long et des exercices de rééducation ciblés. Les deux approches sont complémentaires et peuvent tout à fait se combiner.</p></section>
 <footer>
 <p>© 2025 Joanne Salhab - Diagn’osteo | Site réalisé avec soin 🌿</p>
 </footer>
-</body></div><div class="lang-section" id="en">
-<header>
-<img alt="Logo Diagn'osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>Joanne Salhab – Osteopath D.O.</h1>
-<p class="slogan">"Listen to the patient, observe them – they give you the diagnosis."</p>
-</header>
-<section class="main-section" id="apropos"><h2>About my approach</h2><p>Graduated from the Atman School of Osteopathy in 2015, I practice a holistic osteopathy centered on listening, respecting the body, and understanding each patient as a whole.</p><p>Each consultation begins with a true encounter: understanding your story, your medical history, and your feelings.</p><p>Specialized in perinatal care, I support newborns with issues such as plagiocephaly, reflux, colic, torticollis, sucking or sleeping difficulties.</p><p>I also assist adults and seniors with joint pain, migraines, vertigo, functional digestive disorders, chronic pain, and more.</p><p>I strictly respect medical red flags and refer my patients to a physician whenever a condition requiring medical diagnosis is suspected.</p></section>
-<section class="main-section" id="consultations"><h2>A respectful and personalized approach</h2><p>Each session includes:</p><p>• A detailed case history</p><p>• Manual osteopathic testing</p><p>• A personalized treatment (structural, visceral, cranial, functional, fascial…)</p><p>I ensure that all medical contraindications are respected and refer my patients to a physician when a medical diagnosis is necessary.</p></section>
-<section class="main-section" id="pourqui"><h2>Who is it for? What for?</h2><p>I provide support for newborns from their very first days of life.</p><p>Common reasons for consultation in newborns:</p><p>👶 NEWBORNS</p><p>Plagiocephaly | Gastroesophageal reflux | Colic | Torticollis | Sucking or sleep disorders</p><p>I also support children, adults, pregnant women, athletes, and seniors for a variety of issues:</p><p>🧍 CHILDREN &amp; ADULTS</p><p>Joint and muscle pain | Back pain | Migraines | Headaches | Vertigo | Digestive disorders | Stress | Fatigue | Sleep disorders | Chronic post-traumatic pain | Frozen shoulder | Tendinitis</p><p>🤰 PREGNANT &amp; POSTPARTUM WOMEN</p><p>Birth preparation | Ligament pain | Postnatal follow-up</p><p>🏃 SENIORS &amp; ATHLETES</p><p>Mobility | Fall prevention | Recovery | Chronic or traumatic pain</p></section>
-<section class="main-section" id="rdv"><h2>Book an appointment</h2><p>Consultations are by appointment only. Feel free to contact me directly by phone, email, or via the online booking platform:</p><ul><li>📞 Phone: 06 31 85 46 09</li><li>📧 Email: joanne.salhab@gmail.com</li><li><a href="https://www.doctolib.fr/osteopathe/joanne-salhab">🌐 Book online via Doctolib</a></li></ul></section><section id="faq"><h2>FAQ</h2><h3>How long does a session last?</h3><p>A consultation lasts approximately 45 minutes to 1 hour, depending on your reason for consultation and your needs.</p><h3>How many sessions are needed?</h3><p>The number of sessions depends on your condition, your age, and how your symptoms evolve. Sometimes one session is enough, sometimes several spaced sessions are necessary for lasting results. We will evaluate this together step by step.</p><h3>Can my baby benefit from a session?</h3><p>Yes, I treat newborns from their first days of life, gently and with adapted techniques. Examples: plagiocephaly, reflux, colic, torticollis, sucking or sleeping difficulties…</p><h3>Does osteopathy hurt?</h3><p>No. The osteopathy I practice is gentle and respectful of the body. If any technique could cause discomfort, I always inform you beforehand.</p><h3>Do I need a prescription to consult?</h3><p>No, osteopathy is a direct-access healthcare: you can consult without a medical prescription.</p><h3>Is osteopathy reimbursed?</h3><p>It is not reimbursed by the Social Security, but most health insurances partially or fully cover sessions. I provide an invoice at the end of the consultation.</p><h3>What is the difference between an osteopath and a physiotherapist?</h3><p>An osteopath works independently, without prescription, and with a global vision of the body. They use gentle manual techniques to restore balance and relieve tensions. A physiotherapist usually works under medical prescription, after an injury or surgery, with a rehabilitation program and exercises. Both approaches are complementary.</p></section>
-</div><div class="lang-section" id="es">
-<header>
-<img alt="Logo Diagn'osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>Joanne Salhab – Osteópata D.O.</h1>
-<p class="slogan">"Escucha al paciente, obsérvalo – te da el diagnóstico."</p>
-</header>
-<section class="main-section" id="apropos"><h2>Sobre mi enfoque</h2><p>Graduada en la Escuela de Osteopatía Atman en 2015, practico una osteopatía holística centrada en la escucha, el respeto al cuerpo y la comprensión global de cada paciente.</p><p>Cada consulta comienza con un verdadero encuentro: comprender tu historia, tu recorrido médico, tus sensaciones.</p><p>Especializada en perinatalidad, acompaño a los recién nacidos con problemas como plagiocefalia, reflujo, cólicos, tortícolis, dificultades de succión o sueño.</p><p>También acompaño a adultos y personas mayores con dolores articulares, migrañas, vértigos, trastornos digestivos funcionales, dolores crónicos y más.</p><p>Respeto escrupulosamente los signos de alerta médica (red flags) y derivo a mis pacientes al médico si sospecho una patología que requiere diagnóstico médico.</p></section>
-<section class="main-section" id="consultations"><h2>Un enfoque respetuoso y personalizado</h2><p>Cada sesión incluye:</p><p>• Historia clínica detallada</p><p>• Pruebas osteopáticas manuales</p><p>• Tratamiento personalizado (estructural, visceral, craneal, funcional, fascial…)</p><p>Me aseguro de respetar las contraindicaciones médicas y derivo a mis pacientes a un médico cuando es necesario un diagnóstico clínico.</p></section>
-<section class="main-section" id="pourqui"><h2>¿Para quién? ¿Para qué?</h2><p>Acompaño a los bebés desde sus primeros días de vida.</p><p>Motivos frecuentes de consulta en recién nacidos:</p><p>👶 BEBÉS</p><p>Plagiocefalia | Reflujo gastroesofágico | Cólicos | Tortícolis | Problemas de succión o sueño</p><p>También acompaño a niños, adultos, mujeres embarazadas, deportistas y personas mayores por diversos trastornos:</p><p>🧍 NIÑOS Y ADULTOS</p><p>Dolores articulares y musculares | Dolores de espalda | Migrañas | Cefaleas | Vértigos | Trastornos digestivos | Estrés | Fatiga | Trastornos del sueño | Dolores crónicos postraumáticos | Hombro congelado | Tendinitis</p><p>🤰 MUJERES EMBARAZADAS Y POSTPARTO</p><p>Preparación al parto | Dolores ligamentarios | Seguimiento posparto</p><p>🏃 PERSONAS MAYORES Y DEPORTISTAS</p><p>Movilidad | Prevención de caídas | Recuperación | Dolores crónicos o traumáticos</p></section>
-<section class="main-section" id="rdv"><h2>Pedir cita</h2><p>Las consultas son únicamente con cita previa. Puedes contactarme directamente por teléfono, por correo electrónico o reservar online a través de Doctolib.</p><p>📞 Teléfono: 06 31 85 46 09</p><p>📧 Correo: joanne.salhab@gmail.com</p><p><a href="https://www.doctolib.fr/osteopathe/joanne-salhab">Reservar online en Doctolib</a></p></section><section id="faq"><h2>FAQ</h2><h3>¿Cuánto dura una sesión?</h3><p>Una consulta dura aproximadamente de 45 minutos a 1 hora, dependiendo de tu motivo de consulta y tus necesidades.</p><h3>¿Cuántas sesiones son necesarias?</h3><p>El número de sesiones depende de tu condición, tu edad y la evolución de tus síntomas. A veces basta una sola sesión, otras veces se necesitan varias sesiones espaciadas para obtener un resultado duradero. Evaluaremos esto juntos en cada etapa.</p><h3>¿Puede mi bebé beneficiarse de una sesión?</h3><p>Sí, trato a los recién nacidos desde sus primeros días de vida, con técnicas suaves y adaptadas. Ejemplos: plagiocefalia, reflujo, cólicos, tortícolis, dificultades de succión o de sueño…</p><h3>¿La osteopatía duele?</h3><p>No. La osteopatía que practico es suave y respetuosa con el cuerpo. Si alguna técnica pudiera causar molestias, siempre te lo informaré antes.</p><h3>¿Necesito una receta médica para consultar?</h3><p>No, la osteopatía es una disciplina de acceso directo: puedes acudir sin receta médica.</p><h3>¿La osteopatía está reembolsada?</h3><p>No está reembolsada por la Seguridad Social, pero la mayoría de las mutuas cubren total o parcialmente las sesiones. Te proporcionaré una factura al final de la consulta.</p><h3>¿Cuál es la diferencia entre un osteópata y un fisioterapeuta?</h3><p>El osteópata trabaja en consulta libre, sin necesidad de receta, con una visión global del cuerpo. Utiliza técnicas manuales suaves para restaurar el equilibrio y aliviar tensiones. El fisioterapeuta suele trabajar bajo prescripción médica, tras una lesión o una cirugía, con ejercicios de rehabilitación específicos. Ambos enfoques son complementarios.</p></section>
-</div><div class="lang-section" id="ar">
-<div style="direction: rtl; text-align: right;">
-<header>
-<img alt="Logo Diagn’osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>جوان سلهب - أخصائية تقويم العظام</h1>
-<p class="slogan">"استمع إلى المريض، انظر إليه، فهو يعطيك التشخيص"</p>
-</header>
-<section class="main-section" id="apropos"><h2>عن منهجي</h2><p>تخرجت من مدرسة أتمان لتقويم العظام عام 2015، وأمارس تقويم العظام الشمولي، الذي يركز على الاستماع للجسم واحترام إيقاعه وفهم المريض ككل.</p><p>تبدأ كل جلسة بلقاء حقيقي: فهم قصتك، ومسارك الطبي، ومشاعرك.</p><p>متخصصة في رعاية ما قبل الولادة وبعدها، أرافق الأطفال حديثي الولادة الذين يعانون من مشكلات مثل: تسطح الرأس (الجمجمة)، الارتجاع المعدي المريئي، المغص، التواء الرقبة، صعوبات الرضاعة أو النوم.</p><p>كما أرافق البالغين وكبار السن الذين يعانون من آلام المفاصل، الصداع النصفي، الدوخة، اضطرابات الجهاز الهضمي الوظيفية، الآلام المزمنة والمزيد.</p><p>أحترم بدقة العلامات الطبية التحذيرية (Red Flags)، وأوجه مرضاي إلى الطبيب المختص إذا تم الاشتباه في وجود حالة تتطلب تشخيصاً طبياً.</p></section>
-<section class="main-section" id="consultations"><h2>الاستشارات</h2><p>نهج محترم ومخصص</p><p>كل جلسة تشمل:</p><p>• أخذ تاريخ طبي مفصل</p><p>• اختبارات يدوية لتقويم العظام</p><p>• علاج يدوي مخصص (هيكلي، حشوي، جمجمى، وظيفي، لفافي…)</p><p>أحرص على احترام موانع الاستعمال الطبية وأوجه مرضاي إلى الطبيب إذا لزم الأمر.</p></section>
-<section class="main-section" id="pourqui"><h2>لمن؟ ولماذا؟</h2><p>أرافق الأطفال حديثي الولادة منذ أيامهم الأولى.</p><p>أسباب شائعة للاستشارة عند الأطفال حديثي الولادة:</p><p>👶 الأطفال حديثو الولادة</p><p>تسطح الرأس | الارتجاع المعدي المريئي | مغص | التواء الرقبة | مشاكل الرضاعة أو النوم</p><p>كما أرافق الأطفال، البالغين، النساء الحوامل، الرياضيين وكبار السن في حالات متنوعة:</p><p>🧍 الأطفال والبالغون</p><p>آلام المفاصل والعضلات | آلام الظهر | الصداع النصفي | الصداع | الدوخة | اضطرابات الجهاز الهضمي | الإجهاد | التعب | اضطرابات النوم | الآلام المزمنة ما بعد الصدمة | الكتف المتجمدة | التهاب الأوتار</p><p>🤰 النساء الحوامل وما بعد الولادة</p><p>التحضير للولادة | آلام الأربطة | المتابعة بعد الولادة</p><p>🏃 كبار السن والرياضيون</p><p>الحركة | الوقاية من السقوط | الاستشفاء | الآلام المزمنة أو الناتجة عن إصابة</p></section>
-<section class="main-section" id="rdv"><h2>حجز موعد</h2><p>الاستشارات متاحة فقط بناءً على موعد مُسبق. لا تتردد في الاتصال بي عبر الهاتف أو البريد الإلكتروني أو من خلال منصة الحجز الإلكترونية.</p><p>📞 الهاتف: 06 31 85 46 09</p><p>📧 البريد الإلكتروني: joanne.salhab@gmail.com</p><p><a href="https://www.doctolib.fr/osteopathe/joanne-salhab">احجز عبر Doctolib</a></p></section><section id="faq"><h2>FAQ</h2><h3>كم تستغرق مدة الجلسة؟</h3><p>تستغرق الاستشارة حوالي 45 دقيقة إلى ساعة واحدة، حسب سبب الاستشارة واحتياجاتك.</p><h3>كم عدد الجلسات المطلوبة؟</h3><p>يعتمد عدد الجلسات على حالتك الصحية وعمرك وتطور الأعراض. أحيانًا تكون جلسة واحدة كافية، وأحيانًا يتطلب الأمر عدة جلسات متباعدة لتحقيق نتيجة دائمة. نقيم ذلك معًا في كل مرحلة.</p><h3>هل يمكن لطفلي الاستفادة من جلسة؟</h3><p>نعم، أستقبل الأطفال حديثي الولادة منذ أيامهم الأولى بلطف وبحركات مناسبة لهم. على سبيل المثال: تسطح الرأس، الارتجاع المعدي المريئي، المغص، التواء الرقبة، صعوبات الرضاعة أو النوم...</p><h3>هل العلاج بتقويم العظام مؤلم؟</h3><p>لا. العلاج الذي أقدمه لطيف ويحترم إيقاع الجسم. وإذا كان أي إجراء قد يسبب شعورًا بعدم الارتياح، أبلغك بذلك مسبقًا.</p><h3>هل أحتاج إلى وصفة طبية للاستشارة؟</h3><p>لا، العلاج بتقويم العظام متاح بدون وصفة طبية: يمكنك الحجز مباشرة دون إحالة طبية.</p><h3>هل العلاج بتقويم العظام مشمول بالتأمين؟</h3><p>لا يتم تغطيته من قبل الضمان الاجتماعي، لكن معظم شركات التأمين الخاصة تعوض كليًا أو جزئيًا عن الجلسات. سأزودك بفاتورة بعد نهاية الجلسة.</p><h3>ما الفرق بين أخصائي تقويم العظام وأخصائي العلاج الطبيعي؟</h3><p>يعمل أخصائي تقويم العظام بشكل مستقل ودون الحاجة إلى وصفة طبية، مع رؤية شمولية للجسم. يستخدم تقنيات يدوية لطيفة لاستعادة التوازن وتخفيف التوترات. أما أخصائي العلاج الطبيعي، فعادة ما يعمل بناءً على وصفة طبية، بعد إصابة أو عملية جراحية، مع برنامج تأهيلي وتمارين علاجية محددة. النهجان مكملان لبعضهما البعض.</p></section>
-</div>
-</div><div class="lang-section" id="ru">
-<header>
-<img alt="Logo Diagn’osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>Жоан Салхаб — остеопат D.O.</h1>
-<p class="slogan">"Слушайте пациента, смотрите на него — он подскажет диагноз."</p>
-</header>
-<section class="main-section" id="apropos"><h2>О моем подходе</h2><p>Я окончила школу остеопатии Atman в 2015 году и практикую холистическую остеопатию, основанную на внимательном слушании, уважении к телу и восприятии пациента как целостной личности.</p><p>Каждая консультация начинается с настоящей встречи: понимания вашей истории, медицинского пути и ощущений.</p><p>Я специализируюсь на перинатальной остеопатии и помогаю новорожденным с такими проблемами, как плагиоцефалия, гастроэзофагеальный рефлюкс, колики, кривошея, проблемы с сосанием или сном.</p><p>Также я оказываю помощь взрослым и пожилым людям при болях в суставах, мигренях, головокружениях, функциональных нарушениях пищеварения, хронических болях и других состояниях.</p><p>Я строго соблюдаю медицинские противопоказания (red flags) и направляю своих пациентов к врачу, если есть подозрение на патологию, требующую медицинской диагностики.</p></section>
-<section class="main-section" id="consultations"><h2>Консультации</h2><p>Уважительный и индивидуальный подход</p><p>Каждая сессия включает:</p><p>• Подробный сбор анамнеза</p><p>• Ручные остеопатические тесты</p><p>• Индивидуальное лечение (структурное, висцеральное, краниальное, функциональное, фасциальное…)</p><p>Я строго соблюдаю медицинские противопоказания и направляю пациентов к врачу при необходимости клинической диагностики.</p></section>
-<section class="main-section" id="pourqui"><h2>Кому и зачем?</h2><p>Я сопровождаю новорожденных с первых дней их жизни.</p><p>Распространенные причины обращения у новорожденных:</p><p>👶 НОВОРОЖДЕННЫЕ</p><p>Плагиоцефалия | Гастроэзофагеальный рефлюкс | Колики | Кривошея | Проблемы с сосанием или сном</p><p>Также я помогаю детям, взрослым, беременным женщинам, спортсменам и пожилым людям при различных проблемах:</p><p>🧍 ДЕТИ И ВЗРОСЛЫЕ</p><p>Боли в суставах и мышцах | Боли в спине | Мигрени | Головные боли | Головокружения | Нарушения пищеварения | Стресс | Усталость | Нарушения сна | Хронические посттравматические боли | Замороженное плечо | Тендинит</p><p>🤰 БЕРЕМЕННЫЕ И ПОСЛЕРОДОВЫЕ ЖЕНЩИНЫ</p><p>Подготовка к родам | Боли в связках | Сопровождение после родов</p><p>🏃 ПОЖИЛЫЕ И СПОРТСМЕНЫ</p><p>Подвижность | Профилактика падений | Восстановление | Хронические или травматические боли</p></section>
-<section class="main-section" id="rdv"><h2>Записаться на прием</h2><p>Консультации проводятся только по предварительной записи. Вы можете связаться со мной по телефону, электронной почте или записаться онлайн через платформу Doctolib.</p><p>📞 Телефон: 06 31 85 46 09</p><p>📧 Эл. почта: joanne.salhab@gmail.com</p><p><a href="https://www.doctolib.fr/osteopathe/joanne-salhab">Записаться онлайн через Doctolib</a></p></section><section id="faq"><h2>FAQ</h2><h3>Сколько длится сеанс?</h3><p>Консультация длится примерно от 45 минут до 1 часа, в зависимости от причины обращения и ваших потребностей.</p><h3>Сколько требуется сеансов?</h3><p>Количество сеансов зависит от вашего состояния, возраста и динамики симптомов. Иногда достаточно одного сеанса, а иногда требуется несколько, чтобы добиться устойчивого результата. Мы будем оценивать это вместе на каждом этапе.</p><h3>Может ли мой ребёнок пройти сеанс?</h3><p>Да, я принимаю новорождённых с первых дней жизни, применяя мягкие и адаптированные техники. Например: плагиоцефалия, гастроэзофагеальный рефлюкс, колики, кривошея, проблемы с сосанием или со сном…</p><h3>Болезненна ли остеопатия?</h3><p>Нет. Остеопатия, которую я практикую, мягкая и уважительная по отношению к телу. Если какая-либо манипуляция может вызвать дискомфорт, я обязательно предупреждаю об этом заранее.</p><h3>Нужен ли рецепт врача для консультации?</h3><p>Нет, остеопатия доступна без направления: вы можете записаться напрямую без медицинского рецепта.</p><h3>Возмещается ли остеопатия страховкой?</h3><p>Остеопатия не покрывается государственной страховкой, но большинство частных страховых компаний частично или полностью возмещают стоимость сеансов. Я выдам вам счёт в конце консультации.</p><h3>В чём разница между остеопатом и физиотерапевтом?</h3><p>Остеопат работает самостоятельно, без рецепта, с глобальным подходом к организму. Он использует мягкие мануальные техники для восстановления баланса и снятия напряжения. Физиотерапевт, как правило, работает по направлению врача после травмы или операции, применяя реабилитационные упражнения. Оба подхода дополняют друг друга.</p></section>
-</div><div class="lang-section" id="it">
-<header>
-<img alt="Logo Diagn’osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>Joanne Salhab – Osteopata D.O.</h1>
-<p class="slogan">"Ascolta il paziente, osserva: ti darà la diagnosi."</p>
-</header>
-<section class="main-section" id="apropos"><h2>Il mio approccio</h2><p>Diplomata presso la scuola di osteopatia Atman nel 2015, pratico un’osteopatia olistica basata sull’ascolto, il rispetto del corpo e una visione globale del paziente.</p><p>Ogni consultazione inizia con un vero incontro: comprendere la tua storia, il tuo percorso medico e le tue sensazioni.</p><p>Specializzata in osteopatia perinatale, accompagno i neonati per disturbi come plagiocefalia, reflusso, coliche, torcicollo, difficoltà di suzione o problemi di sonno.</p><p>Assisto anche adulti e anziani con dolori articolari, emicranie, vertigini, disturbi digestivi funzionali, dolori cronici e altro ancora.</p><p>Rispetto scrupolosamente i segnali di allarme medico (red flags) e indirizzo i miei pazienti a un medico quando sospetto una patologia che richiede una diagnosi clinica.</p></section>
-<section class="main-section" id="consultations"><h2>Consultazioni</h2><p>Un approccio rispettoso e personalizzato</p><p>Ogni seduta comprende:</p><p>• Anamnesi dettagliata</p><p>• Test osteopatici manuali</p><p>• Trattamento personalizzato (strutturale, viscerale, craniale, funzionale, fasciale…)</p><p>Mi assicuro di rispettare tutte le controindicazioni mediche e indirizzo i pazienti a un medico se necessario.</p></section>
-<section class="main-section" id="pourqui"><h2>Per chi? Per cosa?</h2><p>Accompagno i neonati fin dai primi giorni di vita.</p><p>Motivi frequenti di consultazione nei neonati:</p><p>👶 NEONATI</p><p>Plagiocefalia | Reflusso gastroesofageo | Coliche | Torcicollo | Problemi di suzione o sonno</p><p>Assisto anche bambini, adulti, donne in gravidanza, sportivi e anziani per varie problematiche:</p><p>🧍 BAMBINI E ADULTI</p><p>Dolori articolari e muscolari | Mal di schiena | Emicranie | Cefalee | Vertigini | Disturbi digestivi | Stress | Affaticamento | Disturbi del sonno | Dolori cronici post-traumatici | Spalla congelata | Tendiniti</p><p>🤰 DONNE IN GRAVIDANZA E POSTPARTO</p><p>Preparazione al parto | Dolori legamentosi | Follow-up postnatale</p><p>🏃 ANZIANI E SPORTIVI</p><p>Mobilità | Prevenzione delle cadute | Recupero | Dolori cronici o traumatici</p></section>
-<section class="main-section" id="rdv"><h2>Prenota un appuntamento</h2><p>Le consultazioni sono disponibili solo su appuntamento. Puoi contattarmi direttamente via telefono, email o prenotare online tramite la piattaforma Doctolib.</p><p>📞 Telefono: 06 31 85 46 09</p><p>📧 Email: joanne.salhab@gmail.com</p><p><a href="https://www.doctolib.fr/osteopathe/joanne-salhab">Prenota online su Doctolib</a></p></section><section id="faq"><h2>FAQ</h2><h3>Quanto dura una seduta?</h3><p>Una consulenza dura circa 45 minuti a 1 ora, a seconda del motivo della consultazione e delle tue esigenze.</p><h3>Quante sedute sono necessarie?</h3><p>Il numero di sedute dipende dal tuo stato di salute, dalla tua età e dall'evoluzione dei sintomi. A volte basta una sola seduta, altre volte sono necessarie più sedute distanziate per ottenere un risultato duraturo. Valuteremo tutto insieme passo dopo passo.</p><h3>Il mio bambino può beneficiare di una seduta?</h3><p>Sì, accolgo i neonati fin dai loro primi giorni di vita, con tecniche dolci e adattate. Esempi: plagiocefalia, reflusso gastroesofageo, coliche, torcicollo, difficoltà di suzione o di sonno…</p><h3>L’osteopatia è dolorosa?</h3><p>No. L’osteopatia che pratico è dolce e rispettosa del corpo. Se una tecnica potesse causare disagio, ti informerò sempre prima di procedere.</p><h3>Serve una prescrizione medica per consultare?</h3><p>No, l'osteopatia è una disciplina ad accesso diretto: puoi consultarmi liberamente senza bisogno di una prescrizione medica.</p><h3>L’osteopatia è rimborsata?</h3><p>Non è rimborsata dal Servizio Sanitario Nazionale, ma la maggior parte delle assicurazioni sanitarie private coprono in parte o totalmente le sedute. Ti fornirò una fattura al termine della consultazione.</p><h3>Qual è la differenza tra un osteopata e un fisioterapista?</h3><p>L’osteopata lavora in consultazione libera, senza prescrizione, con una visione globale del corpo. Utilizza tecniche manuali dolci per ripristinare l’equilibrio e alleviare le tensioni. Il fisioterapista lavora spesso su prescrizione medica, dopo un infortunio o un intervento chirurgico, con programmi di riabilitazione mirati. I due approcci sono complementari.</p></section>
-</div></main><div class="lang-section active" id="fr"><body>
-<header>
-<img alt="Logo Diagn'osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>Joanne Salhab – Osteopath D.O.</h1>
-<p class="slogan">"Listen to the patient, observe them — they give you the diagnosis."</p>
-</header>
-<section class="main-section" id="apropos">
-<h2>À propos de mon approche</h2>
-<p>Diplômée de l’école d’ostéopathie Atman en 2015, je pratique une ostéopathie holistique centrée sur l’écoute, le respect du corps et la globalité de chaque patient. Chaque consultation commence par une véritable rencontre : comprendre votre histoire, votre parcours médical, vos ressentis.</p>
-<p>Spécialisée en périnatalité, j’accompagne les nourrissons pour des troubles tels que plagiocéphalie, reflux, coliques, torticolis, troubles de la succion ou du sommeil. J’interviens aussi auprès des adultes et seniors pour les douleurs articulaires, migraines, vertiges, troubles digestifs fonctionnels, douleurs chroniques, et plus encore.</p>
-<p>Je respecte scrupuleusement les signaux d’alerte médicaux (red flags) et oriente mes patients vers un médecin si une pathologie nécessitant un diagnostic médical est suspectée.</p>
-</section>
-<section class="main-section" id="consultations">
-<h2>Consultations</h2>
-<h3>Déroulement d'une séance</h3>
-<p>Une pratique respectueuse et adaptée
-<p>Chaque séance inclut :</p>
-<li>Anamnèse complète</li>
-<li>Tests ostéopathiques manuels</li>
-<li>Traitement personnalisé (structurel, viscéral, crânien, fonctionnel, fascial…)</li>
-<p>Je veille au respect des contre-indications médicales et oriente mes patients vers un médecin en cas de doute diagnostique.L’ostéopathie est une pratique thérapeutique manuelle fondée sur une connaissance précise de l’anatomie et de la physiologie. Elle vise à restaurer la mobilité des structures du corps (muscles, articulations, viscères, fascias, crâne) afin de favoriser l’équilibre, la circulation et la vitalité.
-</p>
-<p>J’utilise des techniques variées — structurelles, viscérales, crâniennes, fasciales, fonctionnelles et myotensives — adaptées à chaque âge, chaque morphologie et chaque pathologie.
-</p>
-L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complète idéalement un suivi médical global. Je respecte rigoureusement les signaux d’alerte médicaux (red flags) et adresse mes patients à un médecin lorsqu’une pathologie sous-jacente est suspectée.</p>
-<h3>Tarifs</h3>
-<ul>
-<li>Adultes : 70€</li>
-<li>Nourrissons et enfants : 40€</li>
-</ul>
-<h3>Pathologies prises en charge</h3>
-<p>Douleurs musculo-squelettiques, migraines, vertiges, troubles digestifs fonctionnels, troubles posturaux, douleurs tendineuses, troubles liés à la naissance chez les bébés…</p>
-</section>
-<section class="main-section" id="pourqui">
-<h2>Pour qui ? Pour quoi</h2>
-<p>J’accompagne les tout-petits dès leurs premiers jours de vie.<br/><strong>Motifs fréquents de consultation chez le nourrisson :</strong></p>
-<p>👶 NOURRISSONS
-  Plagiocéphalie | Reflux gastro-œsophagien | Coliques | Torticolis | Troubles de la succion ou du sommeil</p>
-<p>🤰 J’accompagne également les enfants, les adultes, les femmes enceintes, les sportifs et les seniors pour des troubles variés :</p>
-<p>🧍 ENFANTS &amp; ADULTES
-  Douleurs articulaires et musculaires | Maux de dos | Migraines | Céphalées | Vertiges | Troubles digestifs | Stress | Fatigue | Troubles du sommeil | Douleurs chroniques post traumatiques | Capsulite rétractile | Tendinites</p>
-<p>🤰 FEMMES ENCEINTES &amp; POST-PARTUM
-  Préparation à l’accouchement | Douleurs ligamentaires | Suivi après naissance</p>
-<p>🏃 SENIORS &amp; SPORTIFS
-  Mobilité | Prévention des chutes | Récupération | Douleurs chroniques ou traumatiques</p>
-</section>
-<section class="main-section" id="rdv">
-<h2>Prendre rendez-vous</h2>
-<p>Téléphone : <strong>06 31 85 46 09</strong></p>
-<p>Email : <strong>joanne.salhab@gmail.com</strong></p>
-<p><a class="cta-button" href="https://www.doctolib.fr/osteopathe/cannes/joanne-salhab" target="_blank">Prendre rendez-vous via Doctolib</a></p>
-<p>Adresse du cabinet : <em>14 Boulevard d'oxford 06400 Cannes</em></p>
-<p>Carte Google Maps ici</p>
-</section>
-<footer>
-<p>© 2025 Joanne Salhab - Diagn’osteo | Site réalisé avec soin 🌿</p>
-</footer>
-</body></div><div class="lang-section active" id="fr"><body>
-<header>
-<img alt="Logo Diagn'osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>Joanne Salhab – Osteópata D.O.</h1>
-<p class="slogan">"Escucha al paciente, obsérvalo: te da el diagnóstico."</p>
-</header>
-<section class="main-section" id="apropos">
-<h2>À propos de mon approche</h2>
-<p>Diplômée de l’école d’ostéopathie Atman en 2015, je pratique une ostéopathie holistique centrée sur l’écoute, le respect du corps et la globalité de chaque patient. Chaque consultation commence par une véritable rencontre : comprendre votre histoire, votre parcours médical, vos ressentis.</p>
-<p>Spécialisée en périnatalité, j’accompagne les nourrissons pour des troubles tels que plagiocéphalie, reflux, coliques, torticolis, troubles de la succion ou du sommeil. J’interviens aussi auprès des adultes et seniors pour les douleurs articulaires, migraines, vertiges, troubles digestifs fonctionnels, douleurs chroniques, et plus encore.</p>
-<p>Je respecte scrupuleusement les signaux d’alerte médicaux (red flags) et oriente mes patients vers un médecin si une pathologie nécessitant un diagnostic médical est suspectée.</p>
-</section>
-<section class="main-section" id="consultations">
-<h2>Consultations</h2>
-<h3>Déroulement d'une séance</h3>
-<p>Une pratique respectueuse et adaptée
-<p>Chaque séance inclut :</p>
-<li>Anamnèse complète</li>
-<li>Tests ostéopathiques manuels</li>
-<li>Traitement personnalisé (structurel, viscéral, crânien, fonctionnel, fascial…)</li>
-<p>Je veille au respect des contre-indications médicales et oriente mes patients vers un médecin en cas de doute diagnostique.L’ostéopathie est une pratique thérapeutique manuelle fondée sur une connaissance précise de l’anatomie et de la physiologie. Elle vise à restaurer la mobilité des structures du corps (muscles, articulations, viscères, fascias, crâne) afin de favoriser l’équilibre, la circulation et la vitalité.
-</p>
-<p>J’utilise des techniques variées — structurelles, viscérales, crâniennes, fasciales, fonctionnelles et myotensives — adaptées à chaque âge, chaque morphologie et chaque pathologie.
-</p>
-L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complète idéalement un suivi médical global. Je respecte rigoureusement les signaux d’alerte médicaux (red flags) et adresse mes patients à un médecin lorsqu’une pathologie sous-jacente est suspectée.</p>
-<h3>Tarifs</h3>
-<ul>
-<li>Adultes : 70€</li>
-<li>Nourrissons et enfants : 40€</li>
-</ul>
-<h3>Pathologies prises en charge</h3>
-<p>Douleurs musculo-squelettiques, migraines, vertiges, troubles digestifs fonctionnels, troubles posturaux, douleurs tendineuses, troubles liés à la naissance chez les bébés…</p>
-</section>
-<section class="main-section" id="pourqui">
-<h2>Pour qui ? Pour quoi</h2>
-<p>J’accompagne les tout-petits dès leurs premiers jours de vie.<br/><strong>Motifs fréquents de consultation chez le nourrisson :</strong></p>
-<p>👶 NOURRISSONS
-  Plagiocéphalie | Reflux gastro-œsophagien | Coliques | Torticolis | Troubles de la succion ou du sommeil</p>
-<p>🤰 J’accompagne également les enfants, les adultes, les femmes enceintes, les sportifs et les seniors pour des troubles variés :</p>
-<p>🧍 ENFANTS &amp; ADULTES
-  Douleurs articulaires et musculaires | Maux de dos | Migraines | Céphalées | Vertiges | Troubles digestifs | Stress | Fatigue | Troubles du sommeil | Douleurs chroniques post traumatiques | Capsulite rétractile | Tendinites</p>
-<p>🤰 FEMMES ENCEINTES &amp; POST-PARTUM
-  Préparation à l’accouchement | Douleurs ligamentaires | Suivi après naissance</p>
-<p>🏃 SENIORS &amp; SPORTIFS
-  Mobilité | Prévention des chutes | Récupération | Douleurs chroniques ou traumatiques</p>
-</section>
-<section class="main-section" id="rdv">
-<h2>Prendre rendez-vous</h2>
-<p>Téléphone : <strong>06 31 85 46 09</strong></p>
-<p>Email : <strong>joanne.salhab@gmail.com</strong></p>
-<p><a class="cta-button" href="https://www.doctolib.fr/osteopathe/cannes/joanne-salhab" target="_blank">Prendre rendez-vous via Doctolib</a></p>
-<p>Adresse du cabinet : <em>14 Boulevard d'oxford 06400 Cannes</em></p>
-<p>Carte Google Maps ici</p>
-</section>
-<footer>
-<p>© 2025 Joanne Salhab - Diagn’osteo | Site réalisé avec soin 🌿</p>
-</footer>
-</body></div><div class="lang-section active" id="fr"><body>
-<header>
-<img alt="Logo Diagn'osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>جوان سلهب – أخصائية تقويم العظام</h1>
-<p class="slogan">"استمع إلى المريض، انظر إليه، هو يعطيك التشخيص."</p>
-</header>
-<section class="main-section" id="apropos">
-<h2>À propos de mon approche</h2>
-<p>Diplômée de l’école d’ostéopathie Atman en 2015, je pratique une ostéopathie holistique centrée sur l’écoute, le respect du corps et la globalité de chaque patient. Chaque consultation commence par une véritable rencontre : comprendre votre histoire, votre parcours médical, vos ressentis.</p>
-<p>Spécialisée en périnatalité, j’accompagne les nourrissons pour des troubles tels que plagiocéphalie, reflux, coliques, torticolis, troubles de la succion ou du sommeil. J’interviens aussi auprès des adultes et seniors pour les douleurs articulaires, migraines, vertiges, troubles digestifs fonctionnels, douleurs chroniques, et plus encore.</p>
-<p>Je respecte scrupuleusement les signaux d’alerte médicaux (red flags) et oriente mes patients vers un médecin si une pathologie nécessitant un diagnostic médical est suspectée.</p>
-</section>
-<section class="main-section" id="consultations">
-<h2>Consultations</h2>
-<h3>Déroulement d'une séance</h3>
-<p>Une pratique respectueuse et adaptée
-<p>Chaque séance inclut :</p>
-<li>Anamnèse complète</li>
-<li>Tests ostéopathiques manuels</li>
-<li>Traitement personnalisé (structurel, viscéral, crânien, fonctionnel, fascial…)</li>
-<p>Je veille au respect des contre-indications médicales et oriente mes patients vers un médecin en cas de doute diagnostique.L’ostéopathie est une pratique thérapeutique manuelle fondée sur une connaissance précise de l’anatomie et de la physiologie. Elle vise à restaurer la mobilité des structures du corps (muscles, articulations, viscères, fascias, crâne) afin de favoriser l’équilibre, la circulation et la vitalité.
-</p>
-<p>J’utilise des techniques variées — structurelles, viscérales, crâniennes, fasciales, fonctionnelles et myotensives — adaptées à chaque âge, chaque morphologie et chaque pathologie.
-</p>
-L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complète idéalement un suivi médical global. Je respecte rigoureusement les signaux d’alerte médicaux (red flags) et adresse mes patients à un médecin lorsqu’une pathologie sous-jacente est suspectée.</p>
-<h3>Tarifs</h3>
-<ul>
-<li>Adultes : 70€</li>
-<li>Nourrissons et enfants : 40€</li>
-</ul>
-<h3>Pathologies prises en charge</h3>
-<p>Douleurs musculo-squelettiques, migraines, vertiges, troubles digestifs fonctionnels, troubles posturaux, douleurs tendineuses, troubles liés à la naissance chez les bébés…</p>
-</section>
-<section class="main-section" id="pourqui">
-<h2>Pour qui ? Pour quoi</h2>
-<p>J’accompagne les tout-petits dès leurs premiers jours de vie.<br/><strong>Motifs fréquents de consultation chez le nourrisson :</strong></p>
-<p>👶 NOURRISSONS
-  Plagiocéphalie | Reflux gastro-œsophagien | Coliques | Torticolis | Troubles de la succion ou du sommeil</p>
-<p>🤰 J’accompagne également les enfants, les adultes, les femmes enceintes, les sportifs et les seniors pour des troubles variés :</p>
-<p>🧍 ENFANTS &amp; ADULTES
-  Douleurs articulaires et musculaires | Maux de dos | Migraines | Céphalées | Vertiges | Troubles digestifs | Stress | Fatigue | Troubles du sommeil | Douleurs chroniques post traumatiques | Capsulite rétractile | Tendinites</p>
-<p>🤰 FEMMES ENCEINTES &amp; POST-PARTUM
-  Préparation à l’accouchement | Douleurs ligamentaires | Suivi après naissance</p>
-<p>🏃 SENIORS &amp; SPORTIFS
-  Mobilité | Prévention des chutes | Récupération | Douleurs chroniques ou traumatiques</p>
-</section>
-<section class="main-section" id="rdv">
-<h2>Prendre rendez-vous</h2>
-<p>Téléphone : <strong>06 31 85 46 09</strong></p>
-<p>Email : <strong>joanne.salhab@gmail.com</strong></p>
-<p><a class="cta-button" href="https://www.doctolib.fr/osteopathe/cannes/joanne-salhab" target="_blank">Prendre rendez-vous via Doctolib</a></p>
-<p>Adresse du cabinet : <em>14 Boulevard d'oxford 06400 Cannes</em></p>
-<p>Carte Google Maps ici</p>
-</section>
-<footer>
-<p>© 2025 Joanne Salhab - Diagn’osteo | Site réalisé avec soin 🌿</p>
-</footer>
-</body></div><div class="lang-section active" id="fr"><body>
-<header>
-<img alt="Logo Diagn'osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>Жоан Салхаб – Остеопат D.O.</h1>
-<p class="slogan">"Слушайте пациента, смотрите на него — он подскажет диагноз."</p>
-</header>
-<section class="main-section" id="apropos">
-<h2>À propos de mon approche</h2>
-<p>Diplômée de l’école d’ostéopathie Atman en 2015, je pratique une ostéopathie holistique centrée sur l’écoute, le respect du corps et la globalité de chaque patient. Chaque consultation commence par une véritable rencontre : comprendre votre histoire, votre parcours médical, vos ressentis.</p>
-<p>Spécialisée en périnatalité, j’accompagne les nourrissons pour des troubles tels que plagiocéphalie, reflux, coliques, torticolis, troubles de la succion ou du sommeil. J’interviens aussi auprès des adultes et seniors pour les douleurs articulaires, migraines, vertiges, troubles digestifs fonctionnels, douleurs chroniques, et plus encore.</p>
-<p>Je respecte scrupuleusement les signaux d’alerte médicaux (red flags) et oriente mes patients vers un médecin si une pathologie nécessitant un diagnostic médical est suspectée.</p>
-</section>
-<section class="main-section" id="consultations">
-<h2>Consultations</h2>
-<h3>Déroulement d'une séance</h3>
-<p>Une pratique respectueuse et adaptée
-<p>Chaque séance inclut :</p>
-<li>Anamnèse complète</li>
-<li>Tests ostéopathiques manuels</li>
-<li>Traitement personnalisé (structurel, viscéral, crânien, fonctionnel, fascial…)</li>
-<p>Je veille au respect des contre-indications médicales et oriente mes patients vers un médecin en cas de doute diagnostique.L’ostéopathie est une pratique thérapeutique manuelle fondée sur une connaissance précise de l’anatomie et de la physiologie. Elle vise à restaurer la mobilité des structures du corps (muscles, articulations, viscères, fascias, crâne) afin de favoriser l’équilibre, la circulation et la vitalité.
-</p>
-<p>J’utilise des techniques variées — structurelles, viscérales, crâniennes, fasciales, fonctionnelles et myotensives — adaptées à chaque âge, chaque morphologie et chaque pathologie.
-</p>
-L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complète idéalement un suivi médical global. Je respecte rigoureusement les signaux d’alerte médicaux (red flags) et adresse mes patients à un médecin lorsqu’une pathologie sous-jacente est suspectée.</p>
-<h3>Tarifs</h3>
-<ul>
-<li>Adultes : 70€</li>
-<li>Nourrissons et enfants : 40€</li>
-</ul>
-<h3>Pathologies prises en charge</h3>
-<p>Douleurs musculo-squelettiques, migraines, vertiges, troubles digestifs fonctionnels, troubles posturaux, douleurs tendineuses, troubles liés à la naissance chez les bébés…</p>
-</section>
-<section class="main-section" id="pourqui">
-<h2>Pour qui ? Pour quoi</h2>
-<p>J’accompagne les tout-petits dès leurs premiers jours de vie.<br/><strong>Motifs fréquents de consultation chez le nourrisson :</strong></p>
-<p>👶 NOURRISSONS
-  Plagiocéphalie | Reflux gastro-œsophagien | Coliques | Torticolis | Troubles de la succion ou du sommeil</p>
-<p>🤰 J’accompagne également les enfants, les adultes, les femmes enceintes, les sportifs et les seniors pour des troubles variés :</p>
-<p>🧍 ENFANTS &amp; ADULTES
-  Douleurs articulaires et musculaires | Maux de dos | Migraines | Céphalées | Vertiges | Troubles digestifs | Stress | Fatigue | Troubles du sommeil | Douleurs chroniques post traumatiques | Capsulite rétractile | Tendinites</p>
-<p>🤰 FEMMES ENCEINTES &amp; POST-PARTUM
-  Préparation à l’accouchement | Douleurs ligamentaires | Suivi après naissance</p>
-<p>🏃 SENIORS &amp; SPORTIFS
-  Mobilité | Prévention des chutes | Récupération | Douleurs chroniques ou traumatiques</p>
-</section>
-<section class="main-section" id="rdv">
-<h2>Prendre rendez-vous</h2>
-<p>Téléphone : <strong>06 31 85 46 09</strong></p>
-<p>Email : <strong>joanne.salhab@gmail.com</strong></p>
-<p><a class="cta-button" href="https://www.doctolib.fr/osteopathe/cannes/joanne-salhab" target="_blank">Prendre rendez-vous via Doctolib</a></p>
-<p>Adresse du cabinet : <em>14 Boulevard d'oxford 06400 Cannes</em></p>
-<p>Carte Google Maps ici</p>
-</section>
-<footer>
-<p>© 2025 Joanne Salhab - Diagn’osteo | Site réalisé avec soin 🌿</p>
-</footer>
-</body></div><div class="lang-section active" id="fr"><body>
-<header>
-<img alt="Logo Diagn'osteo" class="logo" src="logo_serpents_anim_joanne_final.gif" style="max-height: 450px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;"/>
-<h1>Joanne Salhab – Osteopata D.O.</h1>
-<p class="slogan">"Ascolta il paziente, osservalo – ti dà la diagnosi."</p>
-</header>
-<section class="main-section" id="apropos">
-<h2>À propos de mon approche</h2>
-<p>Diplômée de l’école d’ostéopathie Atman en 2015, je pratique une ostéopathie holistique centrée sur l’écoute, le respect du corps et la globalité de chaque patient. Chaque consultation commence par une véritable rencontre : comprendre votre histoire, votre parcours médical, vos ressentis.</p>
-<p>Spécialisée en périnatalité, j’accompagne les nourrissons pour des troubles tels que plagiocéphalie, reflux, coliques, torticolis, troubles de la succion ou du sommeil. J’interviens aussi auprès des adultes et seniors pour les douleurs articulaires, migraines, vertiges, troubles digestifs fonctionnels, douleurs chroniques, et plus encore.</p>
-<p>Je respecte scrupuleusement les signaux d’alerte médicaux (red flags) et oriente mes patients vers un médecin si une pathologie nécessitant un diagnostic médical est suspectée.</p>
-</section>
-<section class="main-section" id="consultations">
-<h2>Consultations</h2>
-<h3>Déroulement d'une séance</h3>
-<p>Une pratique respectueuse et adaptée
-<p>Chaque séance inclut :</p>
-<li>Anamnèse complète</li>
-<li>Tests ostéopathiques manuels</li>
-<li>Traitement personnalisé (structurel, viscéral, crânien, fonctionnel, fascial…)</li>
-<p>Je veille au respect des contre-indications médicales et oriente mes patients vers un médecin en cas de doute diagnostique.L’ostéopathie est une pratique thérapeutique manuelle fondée sur une connaissance précise de l’anatomie et de la physiologie. Elle vise à restaurer la mobilité des structures du corps (muscles, articulations, viscères, fascias, crâne) afin de favoriser l’équilibre, la circulation et la vitalité.
-</p>
-<p>J’utilise des techniques variées — structurelles, viscérales, crâniennes, fasciales, fonctionnelles et myotensives — adaptées à chaque âge, chaque morphologie et chaque pathologie.
-</p>
-L’ostéopathie agit aussi bien en prévention qu’en traitement. Elle complète idéalement un suivi médical global. Je respecte rigoureusement les signaux d’alerte médicaux (red flags) et adresse mes patients à un médecin lorsqu’une pathologie sous-jacente est suspectée.</p>
-<h3>Tarifs</h3>
-<ul>
-<li>Adultes : 70€</li>
-<li>Nourrissons et enfants : 40€</li>
-</ul>
-<h3>Pathologies prises en charge</h3>
-<p>Douleurs musculo-squelettiques, migraines, vertiges, troubles digestifs fonctionnels, troubles posturaux, douleurs tendineuses, troubles liés à la naissance chez les bébés…</p>
-</section>
-<section class="main-section" id="pourqui">
-<h2>Pour qui ? Pour quoi</h2>
-<p>J’accompagne les tout-petits dès leurs premiers jours de vie.<br/><strong>Motifs fréquents de consultation chez le nourrisson :</strong></p>
-<p>👶 NOURRISSONS
-  Plagiocéphalie | Reflux gastro-œsophagien | Coliques | Torticolis | Troubles de la succion ou du sommeil</p>
-<p>🤰 J’accompagne également les enfants, les adultes, les femmes enceintes, les sportifs et les seniors pour des troubles variés :</p>
-<p>🧍 ENFANTS &amp; ADULTES
-  Douleurs articulaires et musculaires | Maux de dos | Migraines | Céphalées | Vertiges | Troubles digestifs | Stress | Fatigue | Troubles du sommeil | Douleurs chroniques post traumatiques | Capsulite rétractile | Tendinites</p>
-<p>🤰 FEMMES ENCEINTES &amp; POST-PARTUM
-  Préparation à l’accouchement | Douleurs ligamentaires | Suivi après naissance</p>
-<p>🏃 SENIORS &amp; SPORTIFS
-  Mobilité | Prévention des chutes | Récupération | Douleurs chroniques ou traumatiques</p>
-</section>
-<section class="main-section" id="rdv">
-<h2>Prendre rendez-vous</h2>
-<p>Téléphone : <strong>06 31 85 46 09</strong></p>
-<p>Email : <strong>joanne.salhab@gmail.com</strong></p>
-<p><a class="cta-button" href="https://www.doctolib.fr/osteopathe/cannes/joanne-salhab" target="_blank">Prendre rendez-vous via Doctolib</a></p>
-<p>Adresse du cabinet : <em>14 Boulevard d'oxford 06400 Cannes</em></p>
-<p>Carte Google Maps ici</p>
-</section>
-<footer>
-<p>© 2025 Joanne Salhab - Diagn’osteo | Site réalisé avec soin 🌿</p>
-</footer>
-</body></div></body>
-</html>
+</body></div></body></html>
